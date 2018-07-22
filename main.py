@@ -31,7 +31,7 @@ print(factors.head())
 print(factors.describe())
 
 ##########################################################################
-# read green bond daily price
+# read green fund daily price
 ##########################################################################
 
 file = 'SRI Final Price.xlsx'
@@ -93,9 +93,9 @@ for select_sheet in xl.sheet_names:
 ##########################################################################
 # write all results
 ##########################################################################
-pd.concat(stats_list, axis=1).to_csv('greenbond_stats.csv')
-pd.concat(ols_list, axis=1).to_csv('greenbond_ols.csv')
-pd.concat(garch_list, axis=1).to_csv('greenbond_garch.csv')
+pd.concat(stats_list, axis=1).to_csv('greenfund_stats.csv')
+pd.concat(ols_list, axis=1).to_csv('greenfund_ols.csv')
+pd.concat(garch_list, axis=1).to_csv('greenfund_garch.csv')
 
 if __name__ == '__main__':
     pass
